@@ -1,55 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PM | BrSE Manager | Duc Nguyen</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<html lang="vi" data-__embeded-gyazo-content-j-s="5.16.0" data-__gyazo-expander-enabled="true"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PM | BrSE Manager | Duc Nguyen</title>
+<meta name="description" content="I am a PM & Bridge Engineer Manager with over 8 years of experience in web development, project management, and cross-cultural communication between Vietnamese and Japanese teams.
+I am passionate about delivering high-quality solutions while ensuring alignment between client business goals and technical execution.
+As a team leader, I have successfully managed Comtor/Pre-BrSE teams, conducted training courses, and overseen recruitment and interviews, helping to build strong and scalable IT communication teams.n.">
+<style>
+  :root{
+    --bg:#0d1117; --panel:#151b24; --panel2:#1b2330; --ink:#e6edf3; --muted:#9aa7b4;
+    --line:#283242; --accent:#4da3ff; --accent2:#46e0a8; --chip:#202a39;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none;}
+  .wrap{max-width:1000px; margin:0 auto; padding:0 24px;}
+  /* nav */
+  nav{position:sticky; top:0; z-index:20; background:rgba(13,17,23,.85); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; height:60px;}
+  nav .brand{font-weight:700; letter-spacing:.5px;}
+  nav .right{display:flex; align-items:center;}
+  nav .links a{color:var(--muted); margin-left:22px; font-size:14px; transition:color .2s;}
+  nav .links a:hover{color:var(--ink);}
+  .langtog{margin-left:22px; display:inline-flex; border:1px solid var(--line); border-radius:7px; overflow:hidden;}
+  .langtog button{background:transparent; color:var(--muted); border:0; padding:5px 11px; font-size:12.5px; font-weight:600; cursor:pointer;}
+  .langtog button.active{background:var(--accent); color:#06121f;}
+  @media(max-width:640px){ nav .links{display:none;} }
+  /* hero */
+  .hero{padding:88px 0 64px; border-bottom:1px solid var(--line);}
+  .hero .eyebrow{color:var(--accent2); font-weight:600; letter-spacing:1px; text-transform:uppercase; font-size:13px;}
+  .hero h1{font-size:clamp(34px,6vw,56px); line-height:1.08; margin:14px 0 10px; font-weight:800;}
+  .hero .role{font-size:clamp(18px,3vw,24px); color:var(--ink); font-weight:600;}
+  .hero .tag{color:var(--muted); font-size:16px; margin-top:14px; max-width:680px;}
+  .cta{margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{display:inline-block; padding:11px 20px; border-radius:8px; font-weight:600; font-size:14px; cursor:pointer;}
+  .btn.primary{background:var(--accent); color:#06121f;}
+  .btn.ghost{border:1px solid var(--line); color:var(--ink);}
+  .stats{display:flex; gap:36px; margin-top:40px; flex-wrap:wrap;}
+  .stat .n{font-size:28px; font-weight:800; color:var(--accent2);}
+  .stat .l{font-size:13px; color:var(--muted);}
+  /* sections */
+  section{padding:60px 0; border-bottom:1px solid var(--line);}
+  h2{font-size:14px; text-transform:uppercase; letter-spacing:2px; color:var(--accent); margin-bottom:24px;}
+  .lead{font-size:18px; max-width:760px; color:var(--ink);}
+  .lead .hl{color:var(--accent2); font-weight:600;}
+  /* skills */
+  .skills{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px;}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px;}
+  .card.feat{border-color:#2c5a8f; background:linear-gradient(180deg,#13202f,#151b24);}
+  .card h3{font-size:15px; margin-bottom:12px; color:var(--ink);}
+  .card.feat h3{color:var(--accent);}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{background:var(--chip); border:1px solid var(--line); color:var(--muted); font-size:12.5px; padding:5px 10px; border-radius:6px;}
+  /* projects */
+  .proj{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px;}
+  .pcard{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px; transition:transform .2s,border-color .2s;}
+  .pcard:hover{transform:translateY(-3px); border-color:#2c5a8f;}
+  .pcard .ptag{color:var(--accent2); font-size:12px; font-weight:600; letter-spacing:.5px; text-transform:uppercase;}
+  .pcard h3{font-size:18px; margin:6px 0 8px;}
+  .pcard p{color:var(--muted); font-size:14.5px;}
+  .pcard .tech{margin-top:12px; font-size:12.5px; color:#7e8b99;}
+  /* timeline */
+  .tl{position:relative; padding-left:26px;}
+  .tl::before{content:""; position:absolute; left:6px; top:6px; bottom:6px; width:2px; background:var(--line);}
+  .item{position:relative; padding-bottom:26px;}
+  .item::before{content:""; position:absolute; left:-26px; top:6px; width:12px; height:12px; border-radius:50%; background:var(--accent); border:2px solid var(--bg);}
+  .item .when{font-size:13px; color:var(--accent2); font-weight:600;}
+  .item h3{font-size:17px; margin:2px 0;}
+  .item .sub{color:var(--muted); font-size:13.5px; margin-bottom:6px;}
+  .item ul{margin:6px 0 0 18px; color:var(--muted); font-size:14px;}
+  .item li{margin:3px 0;}
+  /* contact */
+  .contact-grid{display:flex; gap:14px; flex-wrap:wrap; margin-top:8px;}
+  footer{padding:30px 0; color:#6b7682; font-size:13px; text-align:center;}
+  b,strong{color:var(--ink);}
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
-  <header class="bg-white shadow">
-    <div class="max-w-5xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Duc Nguyen</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-blue-500">About</a>
-        <a href="#skills" class="hover:text-blue-500">Skills</a>
-        <a href="#experience" class="hover:text-blue-500">Experience</a>
-        <a href="#projects" class="hover:text-blue-500">Projects</a>
-        <a href="#contact" class="hover:text-blue-500">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body>
 
-  <section id="about" class="py-16 bg-gray-100">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-4">About Me</h2>
-      <p class="text-lg">
-        I am a PM & Bridge Engineer Manager with over 8 years of experience in web development, project management, and cross-cultural communication between Vietnamese and Japanese teams.
+<nav>
+  <div class="wrap">
+    <span class="brand">Nguyễn Hữu Đức</span>
+    <div class="right">
+      <span class="links">
+        <a href="#about" id="navAbout">Giới thiệu</a>
+        <a href="#skills" id="navSkills">Kỹ năng</a>
+        <a href="#projects" id="navProjects">Dự án</a>
+        <a href="#experience" id="navExperience">Kinh nghiệm</a>
+        <a href="#contact" id="navContact">Liên hệ</a>
+      </span>
+      <span class="langtog">
+        <button data-lang="en" onclick="setLang('en')">EN</button>
+        <button data-lang="vi" onclick="setLang('vi')" class="active">VI</button>
+      </span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow" id="heroEyebrow">Đang nhận freelance &amp; hợp đồng</p>
+    <h1 id="heroTitle">PM | BrSE Manager | Duc Nguyen</h1>
+    <p class="role" id="heroRole">Phát triển AI-Native · React Native · Node / Java · React / Vue</p>
+    <p class="tag" id="heroTag">9+ năm xây dựng và scale các ứng dụng production trên mobile, web và backend. Mình dẫn dắt team, thiết kế hệ thống chịu tải thật, và làm việc cùng Claude AI agent để ship nhanh hơn 2–3 lần.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:trungtin2202@gmail.com" id="ctaContact">Liên hệ</a>
+      <a class="btn ghost" href="#projects" id="ctaWork">Xem dự án</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">9+</div><div class="l" id="statYearsL">năm kinh nghiệm</div></div>
+      <div class="stat"><div class="n">5M+</div><div class="l" id="statUsersL">người dùng (ACB)</div></div>
+      <div class="stat"><div class="n">10k+</div><div class="l" id="statConcL">đồng thời lúc đỉnh (nền tảng live)</div></div>
+      <div class="stat"><div class="n">10</div><div class="l" id="statLedL">kỹ sư đã dẫn dắt</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2 id="aboutH2">Giới thiệu</h2>
+    <p class="lead" id="aboutLead">I am a PM & Bridge Engineer Manager with over 8 years of experience in web development, project management, and cross-cultural communication between Vietnamese and Japanese teams.
 I am passionate about delivering high-quality solutions while ensuring alignment between client business goals and technical execution.
 As a team leader, I have successfully managed Comtor/Pre-BrSE teams, conducted training courses, and overseen recruitment and interviews, helping to build strong and scalable IT communication teams.n.
       </p>
-    </div>
-  </section>
-
-  <section id="skills" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-        <div class="bg-gray-100 p-4 rounded-lg">CakePHP & Laravel</div>
-        <div class="bg-gray-100 p-4 rounded-lg">REST API</div>
-        <div class="bg-gray-100 p-4 rounded-lg">ReactJS & VueJS</div>
-        <div class="bg-gray-100 p-4 rounded-lg">AWS & GCP</div>
-        <div class="bg-gray-100 p-4 rounded-lg">SQL & No SQL</div>
-        <div class="bg-gray-100 p-4 rounded-lg">Git & SVN</div>
-        <div class="bg-gray-100 p-4 rounded-lg">Linux & Window Server</div>
-        <div class="bg-gray-100 p-4 rounded-lg">Agile & Scrum</div>
-        <div class="bg-gray-100 p-4 rounded-lg">Japanese N2 / ビジネス会話</div>
-        <div class="bg-gray-100 p-4 rounded-lg">English Intermediate</div>
+  </div>
+</section>
+  
+<section id="skills">
+  <div class="wrap">
+    <h2 id="skillsH2">Kỹ năng</h2>
+    <div class="skills">
+      <div class="card feat">
+        <h3 id="skAi">⚡ AI-Native &amp; Lập trình Agentic</h3>
+        <div class="chips">
+          <span class="chip">Claude Code agents</span><span class="chip">Rules / CLAUDE.md</span>
+          <span class="chip">Custom skills</span><span class="chip">Multi-agent workflows</span>
+          <span class="chip">MCP</span><span class="chip">Prompt engineering</span><span class="chip">LLM / RAG</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 id="skBackend">Backend</h3>
+        <div class="chips">
+          <span class="chip">Node.js (Express, NestJS)</span><span class="chip">Java Spring Boot</span>
+          <span class="chip">Microservices</span><span class="chip">REST APIs</span>
+          <span class="chip">Redis</span><span class="chip">RabbitMQ</span><span class="chip">WebSocket</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 id="skFrontend">Frontend</h3>
+        <div class="chips">
+          <span class="chip">React.js</span><span class="chip">Vue.js</span><span class="chip">TypeScript</span>
+          <span class="chip">Redux / Saga</span><span class="chip">Ant Design</span><span class="chip">Material-UI</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 id="skMobile">Mobile</h3>
+        <div class="chips">
+          <span class="chip">React Native (Expert)</span><span class="chip">iOS / Android native modules</span>
+          <span class="chip">Performance tuning</span><span class="chip">RSA / Keychain security</span>
+          <span class="chip">RTMP / RTSP / HLS</span>
+        </div>
+      </div>
+      <div class="card feat">
+        <h3 id="skSecurity">🛡 Bảo mật (White-Hat)</h3>
+        <div class="chips">
+          <span class="chip">App / Mobile security</span><span class="chip">Banking-grade hardening</span>
+          <span class="chip">RSA · Keychain · encryption</span><span class="chip">Anti-fraud / access control</span>
+          <span class="chip">Vulnerability assessment</span><span class="chip">Reverse engineering (analysis)</span>
+          <span class="chip">Responsible disclosure</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 id="skDevops">DevOps</h3>
+        <div class="chips">
+          <span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">GitLab CI/CD</span>
+          <span class="chip">Jenkins</span><span class="chip">Fastlane</span><span class="chip">nginx · HA</span><span class="chip">Firebase</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 id="skLeadership">Lãnh đạo &amp; Quản lý</h3>
+        <div class="chips">
+          <span class="chip">Team lead (10+)</span><span class="chip">Mentoring</span>
+          <span class="chip">Code review</span><span class="chip">Agile / Scrum</span><span class="chip">Architecture</span>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="experience" class="py-16 bg-gray-100">
+<section id="projects">
+  <div class="wrap">
+    <h2 id="projH2">Dự án tiêu biểu</h2>
+    <div class="proj">
+      <div class="pcard">
+        <div class="ptag" id="p1Tag">Livestream · Quy mô lớn</div>
+        <h3 id="p1Title">Nền tảng Livestream Bóng đá</h3>
+        <p id="p1Desc">Thiết kế và dẫn dắt một nền tảng livestream bóng đá miễn phí phục vụ <b>10.000+ người xem đồng thời lúc đỉnh</b>. Xử lý cú spike traffic giờ bóng lăn bằng backend microservice đa ngôn ngữ, event-driven và hạ tầng High Availability.</p>
+        <p class="tech">Java · Go · Node.js · Vue · RabbitMQ · MySQL · Redis · MongoDB · nginx · Docker</p>
+      </div>
+      <div class="pcard">
+        <div class="ptag" id="p2Tag">Tự động hóa AI</div>
+        <h3 id="p2Title">Hệ 3-Bot Tự động hóa YouTube</h3>
+        <p id="p2Desc">Xây hệ 3 bot tự sản xuất và đăng video YouTube faceless mỗi ngày — AI viết kịch bản → giọng đọc → ghép video → tự đăng — kèm bộ máy phân tích tự học. Chạy <b>24/7</b>.</p>
+        <p class="tech">Python · FastAPI · LLMs · YouTube API · pm2</p>
+      </div>
+      <div class="pcard">
+        <div class="ptag" id="p3Tag">Mobile Banking · 5 triệu+ user</div>
+        <h3 id="p3Title">ACB One</h3>
+        <p id="p3Desc">Dẫn dắt team React Native làm ACB One (<b>5 triệu+ user, 4.7★</b>). Giảm crash 60%, thời gian tải 45%, và migrate sang kiến trúc mới <b>không downtime</b>. Xác thực sinh trắc học, thanh toán QR, quản lý thẻ.</p>
+        <p class="tech">React Native · Redux Saga · Java Spring Boot · Docker · GitLab CI/CD</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section id="experience" class="py-16 bg-gray-100">
     <div class="max-w-4xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Experience</h2>
       <div class="space-y-6">
@@ -99,23 +268,7 @@ As a team leader, I have successfully managed Comtor/Pre-BrSE teams, conducted t
     </div>
   </section>
 
-  <section id="projects" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
-      <div class="space-y-6">
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold">HR Platform for Japanese SMEs</h3>
-          <p class="mt-2 text-gray-700">Built end-to-end platform using Laravel, React.js, Firebase. Integrated with SNS for notification and Cognito for user management.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg">
-          <h3 class="text-xl font-semibold">Internal Comtor Training Portal</h3>
-          <p class="mt-2 text-gray-700">Designed a content-sharing and evaluation platform for training Comtor/BrSEs internally using MySQL and Laravel Nova.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="py-16 bg-gray-100">
+<section id="contact" class="py-16 bg-gray-100">
     <div class="max-w-3xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold mb-4">Contact</h2>
       <p class="text-lg mb-4">📧 ducnh.works@gmail.com</p>
@@ -123,8 +276,117 @@ As a team leader, I have successfully managed Comtor/Pre-BrSE teams, conducted t
     </div>
   </section>
 
-  <footer class="bg-white py-6 text-center text-sm text-gray-500">
+<footer class="bg-white py-6 text-center text-sm text-gray-500">
     &copy; 2025 Duc Nguyen. All rights reserved.
   </footer>
-</body>
-</html>
+
+<script>
+  const i18n = {
+    en: {
+      navAbout:"About", navSkills:"Skills", navProjects:"Projects", navExperience:"Experience", navContact:"Contact",
+      heroEyebrow:"Available for freelance &amp; contract",
+      heroTitle:"Senior Fullstack Engineer<br>&amp; Tech Lead",
+      heroRole:"AI-Native Development · React Native · Node / Java · React / Vue",
+      heroTag:"9+ years building and scaling production apps across mobile, web and backend. I lead teams, architect systems that hold up under real load, and ship with Claude AI agents to move 2–3× faster.",
+      ctaContact:"Get in touch", ctaWork:"View work",
+      statYearsL:"years experience", statUsersL:"users served (ACB)", statConcL:"peak concurrent (live platform)", statLedL:"engineers led",
+      aboutH2:"About",
+      aboutLead:'I\'m a senior fullstack engineer and tech lead based in Ho Chi Minh City. I\'ve shipped apps to <span class="hl">5M+ users</span> at ACB Bank and architected a live-streaming platform handling <span class="hl">10,000+ concurrent viewers</span>. I work end-to-end — React Native &amp; native modules on the front, Node.js and Java Spring Boot microservices on the back — and I\'m <span class="hl">AI-native</span>: I drive Claude Code agents day to day, writing the rules, custom skills and multi-agent workflows that let me deliver faster without cutting quality.',
+      skillsH2:"Skills",
+      skAi:"⚡ AI-Native &amp; Agentic Dev", skBackend:"Backend", skFrontend:"Frontend", skMobile:"Mobile", skSecurity:"🛡 Security (White-Hat)", skDevops:"DevOps", skLeadership:"Leadership",
+      projH2:"Featured Projects",
+      p1Tag:"Live Streaming · Scale", p1Title:"Football Live-Streaming Platform",
+      p1Desc:'Architected and led a free football live-streaming platform serving <b>10,000+ peak concurrent viewers</b>. Solved kickoff traffic spikes with a polyglot, event-driven microservice backend and high-availability infrastructure.',
+      p2Tag:"AI Automation", p2Title:"3-Bot YouTube Automation",
+      p2Desc:'Built a 3-bot pipeline that auto-produces and publishes faceless YouTube videos daily — AI scripting → voiceover → video assembly → auto-upload — plus a self-learning analytics engine. Runs <b>24/7</b>.',
+      p3Tag:"Mobile Banking · 5M+ users", p3Title:"ACB One",
+      p3Desc:'Led the React Native team behind ACB One (<b>5M+ users, 4.7★</b>). Cut crash rate 60%, load time 45%, and migrated to a new architecture with <b>zero downtime</b>. Biometric auth, QR payment, card management.',
+      expH2:"Experience",
+      e1Title:"Independent / Freelance — Senior Fullstack &amp; AI-Native Engineer",
+      e1Sub:"Remote · fullstack product development &amp; agentic dev enablement",
+      e1List:'<li>Build and ship fullstack products end-to-end (React Native, React/Vue, Node/Java).</li><li>Architected a football live-streaming platform handling 10k+ concurrent viewers.</li><li>Built a 24/7 3-bot YouTube automation pipeline (Python/FastAPI + LLMs).</li><li>Set up Claude AI agents — rules, custom skills, multi-agent workflows, MCP — for faster delivery.</li>',
+      e2Title:"ACB Bank — React Native Team Lead",
+      e2Sub:"Team of 10 · ACB One (5M+ users), ACB One Biz",
+      e2List:'<li>Led a 10-member team delivering bi-weekly releases to 5M+ active users.</li><li>Cut crash rate 60% and load time 45%; zero-downtime architecture migration.</li><li>Built a 50+ component library; established CI/CD (release 2h → 15min).</li>',
+      e3Title:"Netco-Post — Team Lead",
+      e3Sub:"Team of 4 · logistics apps (customer + employee)",
+      e3List:'<li>Architected a shared React Native framework across two apps (−40% code duplication).</li><li>Shipped a new product MVP in 6 weeks; realtime tracking over WebSocket.</li>',
+      e4Title:"Diginet Corporation — Fullstack / Mobile Developer",
+      e4Sub:"Team of 8 · enterprise PM/ERP apps (US &amp; Hong Kong clients)",
+      e4List:'<li>Built across React Native, React.js web and Java Spring Boot / Node.js backends.</li><li>Worked directly with international clients in English on requirements &amp; sprints.</li>',
+      e5Title:"Avatar Solutions — Mobile / Web Developer",
+      e5List:'<li>Delivered 8+ client apps (React Native) and Vue.js admin dashboards.</li><li>Built a reusable Vue.js component library adopted across 5+ projects.</li>',
+      e6Title:"Ebizworld Corp — Mobile Developer (Fresher)",
+      e6List:'<li>Started career building features in React Native and Vue.js; ramped to productive in 2 months.</li>',
+      contactH2:"Contact",
+      contactLead:"Open to freelance and contract work — fullstack development, system architecture &amp; scaling, and setting up Claude AI agents for engineering teams.",
+      contactLoc:"📍 Ho Chi Minh City, Vietnam",
+      footerText:"© PM | BrSE Manager | Duc Nguyen"
+    },
+    vi: {
+      navAbout:"Giới thiệu", navSkills:"Kỹ năng", navProjects:"Dự án", navExperience:"Kinh nghiệm", navContact:"Liên hệ",
+      heroEyebrow:"Đang nhận freelance &amp; hợp đồng",
+      heroTitle:"Kỹ sư Fullstack Senior<br>&amp; Tech Lead",
+      heroRole:"Phát triển AI-Native · React Native · Node / Java · React / Vue",
+      heroTag:"9+ năm xây dựng và scale các ứng dụng production trên mobile, web và backend. Mình dẫn dắt team, thiết kế hệ thống chịu tải thật, và làm việc cùng Claude AI agent để ship nhanh hơn 2–3 lần.",
+      ctaContact:"Liên hệ", ctaWork:"Xem dự án",
+      statYearsL:"năm kinh nghiệm", statUsersL:"người dùng (ACB)", statConcL:"đồng thời lúc đỉnh (nền tảng live)", statLedL:"kỹ sư đã dẫn dắt",
+      aboutH2:"Giới thiệu",
+      aboutLead:'Mình là kỹ sư fullstack senior &amp; tech lead tại TP.HCM. Mình đã ship ứng dụng cho <span class="hl">5 triệu+ người dùng</span> tại ACB Bank và thiết kế một nền tảng livestream chịu <span class="hl">10.000+ người xem đồng thời</span>. Mình làm trọn vẹn từ đầu tới cuối — React Native &amp; native module ở front, microservice Node.js và Java Spring Boot ở back — và làm việc theo kiểu <span class="hl">AI-native</span>: dùng Claude Code agent mỗi ngày, viết rule, custom skill và multi-agent workflow để giao việc nhanh hơn mà không giảm chất lượng.',
+      skillsH2:"Kỹ năng",
+      skAi:"⚡ AI-Native &amp; Lập trình Agentic", skBackend:"Backend", skFrontend:"Frontend", skMobile:"Mobile", skSecurity:"🛡 Bảo mật (White-Hat)", skDevops:"DevOps", skLeadership:"Lãnh đạo & Quản lý",
+      projH2:"Dự án tiêu biểu",
+      p1Tag:"Livestream · Quy mô lớn", p1Title:"Nền tảng Livestream Bóng đá",
+      p1Desc:'Thiết kế và dẫn dắt một nền tảng livestream bóng đá miễn phí phục vụ <b>10.000+ người xem đồng thời lúc đỉnh</b>. Xử lý cú spike traffic giờ bóng lăn bằng backend microservice đa ngôn ngữ, event-driven và hạ tầng High Availability.',
+      p2Tag:"Tự động hóa AI", p2Title:"Hệ 3-Bot Tự động hóa YouTube",
+      p2Desc:'Xây hệ 3 bot tự sản xuất và đăng video YouTube faceless mỗi ngày — AI viết kịch bản → giọng đọc → ghép video → tự đăng — kèm bộ máy phân tích tự học. Chạy <b>24/7</b>.',
+      p3Tag:"Mobile Banking · 5 triệu+ user", p3Title:"ACB One",
+      p3Desc:'Dẫn dắt team React Native làm ACB One (<b>5 triệu+ user, 4.7★</b>). Giảm crash 60%, thời gian tải 45%, và migrate sang kiến trúc mới <b>không downtime</b>. Xác thực sinh trắc học, thanh toán QR, quản lý thẻ.',
+      expH2:"Kinh nghiệm",
+      e1Title:"Độc lập / Freelance — Senior Fullstack &amp; AI-Native Engineer",
+      e1Sub:"Remote · phát triển sản phẩm fullstack &amp; thiết lập quy trình agentic dev",
+      e1List:'<li>Xây và ship sản phẩm fullstack trọn vẹn (React Native, React/Vue, Node/Java).</li><li>Thiết kế nền tảng livestream bóng đá chịu 10k+ người xem đồng thời.</li><li>Dựng hệ 3-bot tự động hóa YouTube chạy 24/7 (Python/FastAPI + LLM).</li><li>Set up Claude AI agent — rule, custom skill, multi-agent workflow, MCP — để giao việc nhanh hơn.</li>',
+      e2Title:"ACB Bank — React Native Team Lead",
+      e2Sub:"Team 10 người · ACB One (5 triệu+ user), ACB One Biz",
+      e2List:'<li>Dẫn dắt team 10 người, release 2 tuần/lần cho 5 triệu+ user hoạt động.</li><li>Giảm crash 60% và thời gian tải 45%; migrate kiến trúc không downtime.</li><li>Xây thư viện 50+ component; thiết lập CI/CD (release 2 giờ → 15 phút).</li>',
+      e3Title:"Netco-Post — Team Lead",
+      e3Sub:"Team 4 người · ứng dụng logistics (khách hàng + nhân viên)",
+      e3List:'<li>Thiết kế framework React Native dùng chung cho 2 app (giảm 40% trùng lặp code).</li><li>Ship MVP sản phẩm mới trong 6 tuần; theo dõi realtime qua WebSocket.</li>',
+      e4Title:"Diginet Corporation — Fullstack / Mobile Developer",
+      e4Sub:"Team 8 người · app PM/ERP doanh nghiệp (khách Mỹ &amp; Hồng Kông)",
+      e4List:'<li>Làm xuyên suốt React Native, web React.js và backend Java Spring Boot / Node.js.</li><li>Làm việc trực tiếp với khách quốc tế bằng tiếng Anh về yêu cầu &amp; sprint.</li>',
+      e5Title:"Avatar Solutions — Mobile / Web Developer",
+      e5List:'<li>Giao 8+ app khách hàng (React Native) và dashboard quản trị Vue.js.</li><li>Xây thư viện component Vue.js tái sử dụng cho 5+ dự án.</li>',
+      e6Title:"Ebizworld Corp — Mobile Developer (Fresher)",
+      e6List:'<li>Bắt đầu sự nghiệp, làm tính năng React Native và Vue.js; thạo việc sau 2 tháng.</li>',
+      contactH2:"Liên hệ",
+      contactLead:"Đang nhận freelance và hợp đồng — phát triển fullstack, thiết kế &amp; scale hệ thống, và set up Claude AI agent cho team kỹ thuật.",
+      contactLoc:"📍 TP. Hồ Chí Minh, Việt Nam",
+      footerText:"© 2026 PM | BrSE Manager | Duc Nguyen"
+    }
+  };
+
+  function setLang(lang){
+    const dict = i18n[lang] || i18n.en;
+    for (const id in dict){
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = dict[id];
+    }
+    document.documentElement.lang = lang;
+    document.querySelectorAll('.langtog button').forEach(b=>{
+      b.classList.toggle('active', b.dataset.lang === lang);
+    });
+    try { localStorage.setItem('lang', lang); } catch(e){}
+  }
+
+  (function(){
+    let saved = null;
+    try { saved = localStorage.getItem('lang'); } catch(e){}
+    const initial = saved || ((navigator.language||'en').toLowerCase().startsWith('vi') ? 'vi' : 'en');
+    setLang(initial);
+  })();
+</script>
+
+
+
+<div class="selection_bubble_root" style="display: none;"></div></body></html>
